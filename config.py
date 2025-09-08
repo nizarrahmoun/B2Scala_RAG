@@ -5,7 +5,7 @@ Configuration file for B2Scala-RAG-NVIDIA
 import os
 
 # NVIDIA API Configuration
-NVIDIA_API_KEY = "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"
+NVIDIA_API_KEY = ""          """connect to nvidia to get your own api (deepseek 3.1)"""
 
 # Model Configuration
 EMBEDDING_MODEL = "nvidia/nv-embedqa-e5-v5"
