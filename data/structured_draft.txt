@@ -1,0 +1,14 @@
+Title: Simple Key Exchange
+Agents:
+  - Client
+  - Server
+Messages:
+  - Client -> Server: ClientHello(nonceC)
+  - Server -> Client: ServerHello(nonceS, cert)
+  - Client -> Server: Finished(MAC)
+Goals:
+  - Mutual authentication
+  - Establish session key
+Assumptions:
+  - Server has certificate
+  - Channel is unreliable
