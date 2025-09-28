@@ -83,21 +83,22 @@ B2Scala-RAG-NVIDIA/
 ### 1️⃣ Prerequisites
 
 - **Python 3.13+**
-- **NVIDIA API Key** (for AI endpoints)
+- **NVIDIA API Key** (for AI endpoints) - See [API_KEY_SETUP.md](API_KEY_SETUP.md)
 - **Tesseract OCR** (for image processing) - See [TESSERACT_SETUP.md](TESSERACT_SETUP.md)
 
 ### 2️⃣ Installation
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd B2Scala-RAG-NVIDIA
+git clone https://github.com/nizarrahmoun/B2Scala_RAG.git
+cd B2Scala_RAG
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Set up your NVIDIA API key (optional - default key is provided)
-export NVIDIA_API_KEY="your-api-key-here"
+# Set up your NVIDIA API key
+cp .env.example .env
+# Edit .env and add your NVIDIA API key
 ```
 
 ### 3️⃣ Initialize Knowledge Base

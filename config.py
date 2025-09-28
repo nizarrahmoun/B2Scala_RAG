@@ -3,9 +3,13 @@ Configuration file for B2Scala-RAG-NVIDIA
 """
 
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # NVIDIA API Configuration
-NVIDIA_API_KEY = ""          """connect to nvidia to get your own api (deepseek 3.1)"""
+NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "")
 
 # Model Configuration
 EMBEDDING_MODEL = "nvidia/nv-embedqa-e5-v5"
