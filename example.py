@@ -2,9 +2,14 @@
 Example usage of the B2Scala-RAG-NVIDIA system
 """
 
+import os
+import sys
+
+# Add the src directory to Python path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+
 from src.rag_pipeline import RAGPipeline
 from config import NVIDIA_API_KEY, GENERATED_DIR
-import os
 
 # Example protocol draft
 EXAMPLE_DRAFT = """

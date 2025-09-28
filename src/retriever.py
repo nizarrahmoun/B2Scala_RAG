@@ -1,5 +1,8 @@
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
-from langchain_community.vectorstores import Chroma
+try:
+    from langchain_chroma import Chroma
+except ImportError:
+    from langchain_community.vectorstores import Chroma
 import os
 import sys
 sys.path.append('..')

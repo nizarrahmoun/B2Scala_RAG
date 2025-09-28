@@ -377,5 +377,5 @@ with st.expander("📖 How to use"):
 
 # Footer
 st.markdown("---")
-st.markdown("**B2Scala-RAG-NVIDIA** - Powered by NVIDIA AI Endpoints | DeepSeek v3.1")
+st.markdown("**B2Scala-RAG")
 st.caption("📁 File Upload Support: PDF, PNG, JPG, JPEG, BMP, TIFF, SCALA | 🔍 OCR Text Extraction")

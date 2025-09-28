@@ -5,6 +5,10 @@ This script demonstrates how to train/fine-tune the system using additional exam
 
 import os
 import sys
+
+# Add the src directory to Python path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+
 from src.data_processor import process_documents
 from src.rag_pipeline import RAGPipeline
 from src.retriever import Retriever
